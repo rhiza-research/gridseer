@@ -1,7 +1,7 @@
 [project]
-name = "gridseer"
+name = "seer-explorer"
 version = "0.1.0"
-description = "Data publishing for the gridseer site"
+description = "Data publishing for the seer explorer site"
 requires-python = ">=3.12"
 dependencies = [
     "seer",

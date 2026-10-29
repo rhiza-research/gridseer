@@ -1,4 +1,4 @@
-# gridseer
+# seer explorer
 
 A static site for browsing seer power-system planning models: a map of covered countries, and for each model
 its planning inputs and solved outputs.

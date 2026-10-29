@@ -30,7 +30,7 @@ export async function renderMap(app) {
 
   app.innerHTML = `
     <section class="home-intro">
-      <img class="home-logo" src="img/logo.svg" alt="gridseer">
+      <img class="home-logo" src="img/logo.svg" alt="seer explorer">
       <div>
       <h1>Power-system planning models</h1>
       <p>Capacity expansion models for ${models.length} power systems, built and solved with seer.

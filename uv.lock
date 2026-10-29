@@ -1755,27 +1755,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "gridseer"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "fsspec" },
-    { name = "gcsfs" },
-    { name = "pandas" },
-    { name = "pyarrow" },
-    { name = "seer" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "fsspec" },
-    { name = "gcsfs" },
-    { name = "pandas" },
-    { name = "pyarrow" },
-    { name = "seer", editable = "../seer" },
-]
-
-[[package]]
 name = "grpc-google-iam-v1"
 version = "0.14.6"
 source = { registry = "https://pypi.org/simple" }
@@ -5087,6 +5066,27 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [{ name = "openpyxl", specifier = ">=3.1.5" }]
+
+[[package]]
+name = "seer-explorer"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "fsspec" },
+    { name = "gcsfs" },
+    { name = "pandas" },
+    { name = "pyarrow" },
+    { name = "seer" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "fsspec" },
+    { name = "gcsfs" },
+    { name = "pandas" },
+    { name = "pyarrow" },
+    { name = "seer", editable = "../seer" },
+]
 
 [[package]]
 name = "send2trash"
