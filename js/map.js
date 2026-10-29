@@ -28,9 +28,10 @@ export async function renderMap(app) {
     for (const iso of d.iso3) modelOf.set(NUMERIC[iso], d);
   }
 
+  // the home page shows the header's logo and name beside the intro
   app.innerHTML = `
     <section class="home-intro">
-      <img class="home-logo" src="img/logo.svg" alt="seer explorer">
+      ${document.querySelector(".site-header .brand").outerHTML}
       <div>
       <h1>Power-system planning models</h1>
       <p>Capacity expansion models for ${models.length} power systems, built and solved with seer.
