@@ -1,0 +1,20 @@
+[project]
+name = "gridseer"
+version = "0.1.0"
+description = "Data publishing for the gridseer site"
+requires-python = ">=3.12"
+dependencies = [
+    "seer",
+    "fsspec",
+    "gcsfs",
+    "pandas",
+    "pyarrow",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+# the calendar weights come from seer's own time_utils, so they match the models
+seer = { path = "../seer", editable = true }
+gridflow = { git = "https://github.com/ESMAP-World-Bank-Group/gridflow.git", rev = "network-zoning-method" }

@@ -1,0 +1,88 @@
+country: Rwanda
+base:
+  repo: https://github.com/rhiza-research/seer-planning-models
+  path: from_epm/Rwanda
+seed: 0
+significant_figures: 6
+cost_dataset: wb_epm
+
+solve:
+  model: pyomo
+  annualize_capex: true
+  years: all
+  time_limit: 3600
+
+runs:
+
+- name: baseline
+  noise: 0
+  solve: true
+
+- name: one_at_a_time
+  scenario:
+    sweep_mode: iterate
+    elements:
+      voll: [low, high]
+      demand_profile: [low, high]
+      re_profile: [low, high]
+      hydro: [low, high]
+      fuel: [low, high]
+  noise: 0.02
+  solve: true
+
+- name: random_solved
+  perturbation:
+    demand: 0.5
+    renewables: 0.5
+    fuel: 0.5
+  iters: 20
+  noise: 0.02
+  solve: true
+
+- name: random_low
+  perturbation:
+    demand: 0.25
+    renewables: 0.25
+    fuel: 0.25
+  iters: 1190
+  noise: 0.02
+  solve: false
+
+- name: random_mid
+  perturbation:
+    demand: 0.5
+    renewables: 0.5
+    fuel: 0.5
+  iters: 1190
+  noise: 0.02
+  solve: false
+
+- name: random_high
+  perturbation:
+    demand: 1.0
+    renewables: 1.0
+    fuel: 1.0
+  iters: 1190
+  noise: 0.02
+  solve: false
+
+# added by seer.ccai_dataset.run
+provenance:
+  base_instance:
+    commit: 1d3e7785342dc6e3626931967088f007ba5be6cd
+    url: https://github.com/rhiza-research/seer-planning-models/tree/1d3e7785342dc6e3626931967088f007ba5be6cd/from_epm/Rwanda
+  optimizer:
+    name: pyomo
+    solver: appsi_highs
+    commit: a1e9d5a898d8cfc38dcd6b09e71cbaa0986e687d
+    url: https://github.com/rhiza-research/seer/tree/a1e9d5a898d8cfc38dcd6b09e71cbaa0986e687d/seer/models/pyomo_model
+  environment:
+    python: 3.12.2
+    seer: 0.1.0
+    pyomo: 6.10.1
+    pypsa: 1.0.6
+    linopy: 0.5.8
+    highspy: 1.12.0
+    pandas: 2.3.3
+    numpy: 2.4.0
+  created: '2026-10-28T12:31:39+00:00'

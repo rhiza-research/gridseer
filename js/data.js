@@ -1,9 +1,8 @@
 // Data access: the manifest and each country's Parquet tables, queried with DuckDB-WASM.
 import * as duckdb from "https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/+esm";
 
-// While testing, the bucket is private: serve a local copy at ./data (scripts/sync_data.sh).
-const LOCAL = ["localhost", "127.0.0.1"].includes(location.hostname);
-export const DATA_BASE = LOCAL ? new URL("data/", location.href).href : "https://storage.googleapis.com/gridseer-data/";
+// The Parquet tables live in this repo under ./data, served alongside the site.
+export const DATA_BASE = new URL("data/", location.href).href;
 
 let manifestPromise;
 export function manifest() {

@@ -1,0 +1,2901 @@
+{
+ "countries": {
+  "Bosnia": {
+   "name": "Bosnia",
+   "iso3": [
+    "BIH"
+   ],
+   "zones": [
+    "BiH"
+   ],
+   "years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037,
+    2038,
+    2039,
+    2040
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Bosnia and Herzegovina - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/bosnia-and-herzegovina-electricity-planning-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1771
+     },
+     "zones": {
+      "rows": 1,
+      "bytes": 2141
+     },
+     "years": {
+      "rows": 21,
+      "bytes": 1285
+     },
+     "times": {
+      "rows": 576,
+      "bytes": 2945
+     },
+     "demand_forecast": {
+      "rows": 21,
+      "bytes": 2949
+     },
+     "demand_profile": {
+      "rows": 576,
+      "bytes": 5405
+     },
+     "renewable_profiles": {
+      "rows": 64512,
+      "bytes": 66373
+     },
+     "generator_constants": {
+      "rows": 131,
+      "bytes": 14502
+     },
+     "generator_costs": {
+      "rows": 262,
+      "bytes": 27082
+     },
+     "storage_constants": {
+      "rows": 5,
+      "bytes": 7819
+     },
+     "storage_costs": {
+      "rows": 10,
+      "bytes": 13647
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 0,
+      "bytes": 2220
+     },
+     "generator_capacity": {
+      "rows": 2751,
+      "bytes": 5728
+     },
+     "storage_capacity": {
+      "rows": 105,
+      "bytes": 4061
+     },
+     "dispatch": {
+      "rows": 1645056,
+      "bytes": 1959380
+     },
+     "lost_load": {
+      "rows": 12096,
+      "bytes": 32737
+     },
+     "line_flow": {
+      "rows": 0,
+      "bytes": 2991
+     },
+     "storage_soc": {
+      "rows": 60480,
+      "bytes": 100830
+     },
+     "prices": {
+      "rows": 12096,
+      "bytes": 33800
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2527
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 72576,
+      "bytes": 206112
+     },
+     "demand": {
+      "rows": 12096,
+      "bytes": 87678
+     },
+     "capacity_by_fuel": {
+      "rows": 126,
+      "bytes": 3642
+     }
+    }
+   },
+   "summary": {
+    "objective": 1078040000.0,
+    "demand": 236979000.0,
+    "lost_load": 0.0
+   }
+  },
+  "Botswana": {
+   "name": "Botswana",
+   "iso3": [
+    "BWA"
+   ],
+   "zones": [
+    "Botswana"
+   ],
+   "years": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037,
+    2038,
+    2039,
+    2040
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Botswana - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/botswana-electricity-planning-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1771
+     },
+     "zones": {
+      "rows": 1,
+      "bytes": 2219
+     },
+     "years": {
+      "rows": 19,
+      "bytes": 1279
+     },
+     "times": {
+      "rows": 216,
+      "bytes": 2136
+     },
+     "demand_forecast": {
+      "rows": 19,
+      "bytes": 2974
+     },
+     "demand_profile": {
+      "rows": 216,
+      "bytes": 3721
+     },
+     "renewable_profiles": {
+      "rows": 648,
+      "bytes": 5578
+     },
+     "generator_constants": {
+      "rows": 24,
+      "bytes": 9918
+     },
+     "generator_costs": {
+      "rows": 48,
+      "bytes": 14915
+     },
+     "storage_constants": {
+      "rows": 1,
+      "bytes": 7641
+     },
+     "storage_costs": {
+      "rows": 2,
+      "bytes": 12383
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 0,
+      "bytes": 2220
+     },
+     "generator_capacity": {
+      "rows": 456,
+      "bytes": 4737
+     },
+     "storage_capacity": {
+      "rows": 19,
+      "bytes": 4053
+     },
+     "dispatch": {
+      "rows": 102600,
+      "bytes": 83610
+     },
+     "lost_load": {
+      "rows": 4104,
+      "bytes": 13813
+     },
+     "line_flow": {
+      "rows": 0,
+      "bytes": 2991
+     },
+     "storage_soc": {
+      "rows": 4104,
+      "bytes": 20580
+     },
+     "prices": {
+      "rows": 4104,
+      "bytes": 15383
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2563
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 28728,
+      "bytes": 68142
+     },
+     "demand": {
+      "rows": 4104,
+      "bytes": 38012
+     },
+     "capacity_by_fuel": {
+      "rows": 133,
+      "bytes": 4017
+     }
+    }
+   },
+   "summary": {
+    "objective": 1531890000.0,
+    "demand": 117554000.0,
+    "lost_load": 16218.8
+   }
+  },
+  "Burkina Faso": {
+   "name": "Burkina Faso",
+   "iso3": [
+    "BFA"
+   ],
+   "zones": [
+    "BUR"
+   ],
+   "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Burkina Faso - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/burkina-faso-electricity-planning-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1771
+     },
+     "zones": {
+      "rows": 1,
+      "bytes": 2141
+     },
+     "years": {
+      "rows": 13,
+      "bytes": 1255
+     },
+     "times": {
+      "rows": 96,
+      "bytes": 1955
+     },
+     "demand_forecast": {
+      "rows": 13,
+      "bytes": 2907
+     },
+     "demand_profile": {
+      "rows": 96,
+      "bytes": 2717
+     },
+     "renewable_profiles": {
+      "rows": 1056,
+      "bytes": 5158
+     },
+     "generator_constants": {
+      "rows": 38,
+      "bytes": 10330
+     },
+     "generator_costs": {
+      "rows": 76,
+      "bytes": 11698
+     },
+     "storage_constants": {
+      "rows": 5,
+      "bytes": 7601
+     },
+     "storage_costs": {
+      "rows": 10,
+      "bytes": 9124
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 0,
+      "bytes": 2220
+     },
+     "generator_capacity": {
+      "rows": 494,
+      "bytes": 4858
+     },
+     "storage_capacity": {
+      "rows": 65,
+      "bytes": 4004
+     },
+     "dispatch": {
+      "rows": 53664,
+      "bytes": 30310
+     },
+     "lost_load": {
+      "rows": 1248,
+      "bytes": 6600
+     },
+     "line_flow": {
+      "rows": 0,
+      "bytes": 2991
+     },
+     "storage_soc": {
+      "rows": 6240,
+      "bytes": 10602
+     },
+     "prices": {
+      "rows": 1248,
+      "bytes": 7332
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2569
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 6240,
+      "bytes": 24431
+     },
+     "demand": {
+      "rows": 1248,
+      "bytes": 13056
+     },
+     "capacity_by_fuel": {
+      "rows": 65,
+      "bytes": 3846
+     }
+    }
+   },
+   "summary": {
+    "objective": 3483510000.0,
+    "demand": 43473100.0,
+    "lost_load": 7485.24
+   }
+  },
+  "Chad": {
+   "name": "Chad",
+   "iso3": [
+    "TCD"
+   ],
+   "zones": [
+    "Chad"
+   ],
+   "years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Chad - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/chad-electricity-planning-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1771
+     },
+     "zones": {
+      "rows": 1,
+      "bytes": 2159
+     },
+     "years": {
+      "rows": 16,
+      "bytes": 1264
+     },
+     "times": {
+      "rows": 144,
+      "bytes": 2057
+     },
+     "demand_forecast": {
+      "rows": 16,
+      "bytes": 2948
+     },
+     "demand_profile": {
+      "rows": 144,
+      "bytes": 3446
+     },
+     "renewable_profiles": {
+      "rows": 144,
+      "bytes": 4854
+     },
+     "generator_constants": {
+      "rows": 17,
+      "bytes": 9625
+     },
+     "generator_costs": {
+      "rows": 34,
+      "bytes": 12274
+     },
+     "storage_constants": {
+      "rows": 4,
+      "bytes": 7600
+     },
+     "storage_costs": {
+      "rows": 8,
+      "bytes": 10736
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 0,
+      "bytes": 2220
+     },
+     "generator_capacity": {
+      "rows": 272,
+      "bytes": 4481
+     },
+     "storage_capacity": {
+      "rows": 64,
+      "bytes": 4110
+     },
+     "dispatch": {
+      "rows": 48384,
+      "bytes": 56183
+     },
+     "lost_load": {
+      "rows": 2304,
+      "bytes": 9133
+     },
+     "line_flow": {
+      "rows": 0,
+      "bytes": 2991
+     },
+     "storage_soc": {
+      "rows": 9216,
+      "bytes": 21609
+     },
+     "prices": {
+      "rows": 2304,
+      "bytes": 9835
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2566
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 9216,
+      "bytes": 44708
+     },
+     "demand": {
+      "rows": 2304,
+      "bytes": 28399
+     },
+     "capacity_by_fuel": {
+      "rows": 64,
+      "bytes": 3955
+     }
+    }
+   },
+   "summary": {
+    "objective": 1125480000.0,
+    "demand": 21335700.0,
+    "lost_load": 50678.1
+   }
+  },
+  "Djibouti": {
+   "name": "Djibouti",
+   "iso3": [
+    "DJI"
+   ],
+   "zones": [
+    "Djibouti"
+   ],
+   "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Djibouti - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/djibouti-electricity-planning-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1771
+     },
+     "zones": {
+      "rows": 1,
+      "bytes": 2219
+     },
+     "years": {
+      "rows": 13,
+      "bytes": 1255
+     },
+     "times": {
+      "rows": 96,
+      "bytes": 1963
+     },
+     "demand_forecast": {
+      "rows": 13,
+      "bytes": 2934
+     },
+     "demand_profile": {
+      "rows": 96,
+      "bytes": 3104
+     },
+     "renewable_profiles": {
+      "rows": 288,
+      "bytes": 4998
+     },
+     "generator_constants": {
+      "rows": 37,
+      "bytes": 9878
+     },
+     "generator_costs": {
+      "rows": 74,
+      "bytes": 11298
+     },
+     "storage_constants": {
+      "rows": 0,
+      "bytes": 5937
+     },
+     "storage_costs": {
+      "rows": 0,
+      "bytes": 6525
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 0,
+      "bytes": 2220
+     },
+     "generator_capacity": {
+      "rows": 481,
+      "bytes": 4631
+     },
+     "storage_capacity": {
+      "rows": 0,
+      "bytes": 3031
+     },
+     "dispatch": {
+      "rows": 46176,
+      "bytes": 26543
+     },
+     "lost_load": {
+      "rows": 1248,
+      "bytes": 6476
+     },
+     "line_flow": {
+      "rows": 0,
+      "bytes": 2991
+     },
+     "storage_soc": {
+      "rows": 0,
+      "bytes": 3797
+     },
+     "prices": {
+      "rows": 1248,
+      "bytes": 7227
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2541
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 7488,
+      "bytes": 24903
+     },
+     "demand": {
+      "rows": 1248,
+      "bytes": 17621
+     },
+     "capacity_by_fuel": {
+      "rows": 78,
+      "bytes": 3791
+     }
+    }
+   },
+   "summary": {
+    "objective": 677536000.0,
+    "demand": 14337800.0,
+    "lost_load": 0.0
+   }
+  },
+  "Egypt": {
+   "name": "Egypt",
+   "iso3": [
+    "EGY"
+   ],
+   "zones": [
+    "EGYPT"
+   ],
+   "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Egypt - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/egypt-electricity-planning-models",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1771
+     },
+     "zones": {
+      "rows": 1,
+      "bytes": 2174
+     },
+     "years": {
+      "rows": 18,
+      "bytes": 1277
+     },
+     "times": {
+      "rows": 288,
+      "bytes": 2284
+     },
+     "demand_forecast": {
+      "rows": 18,
+      "bytes": 2957
+     },
+     "demand_profile": {
+      "rows": 288,
+      "bytes": 4552
+     },
+     "renewable_profiles": {
+      "rows": 3168,
+      "bytes": 7225
+     },
+     "generator_constants": {
+      "rows": 84,
+      "bytes": 11118
+     },
+     "generator_costs": {
+      "rows": 168,
+      "bytes": 24036
+     },
+     "storage_constants": {
+      "rows": 1,
+      "bytes": 7631
+     },
+     "storage_costs": {
+      "rows": 2,
+      "bytes": 11828
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 0,
+      "bytes": 2220
+     },
+     "generator_capacity": {
+      "rows": 1512,
+      "bytes": 5749
+     },
+     "storage_capacity": {
+      "rows": 18,
+      "bytes": 3958
+     },
+     "dispatch": {
+      "rows": 440640,
+      "bytes": 290580
+     },
+     "lost_load": {
+      "rows": 5184,
+      "bytes": 15910
+     },
+     "line_flow": {
+      "rows": 0,
+      "bytes": 2991
+     },
+     "storage_soc": {
+      "rows": 5184,
+      "bytes": 18004
+     },
+     "prices": {
+      "rows": 5184,
+      "bytes": 19759
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2548
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 41472,
+      "bytes": 97914
+     },
+     "demand": {
+      "rows": 5184,
+      "bytes": 53236
+     },
+     "capacity_by_fuel": {
+      "rows": 144,
+      "bytes": 4030
+     }
+    }
+   },
+   "summary": {
+    "objective": 133084000000.0,
+    "demand": 6368500000.0,
+    "lost_load": 0.0
+   }
+  },
+  "Gambia": {
+   "name": "Gambia",
+   "iso3": [
+    "GMB"
+   ],
+   "zones": [
+    "GBA",
+    "FFN",
+    "BSE"
+   ],
+   "years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Gambia - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/gambia-electricity-planning-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1771
+     },
+     "zones": {
+      "rows": 3,
+      "bytes": 2189
+     },
+     "years": {
+      "rows": 17,
+      "bytes": 1274
+     },
+     "times": {
+      "rows": 192,
+      "bytes": 2106
+     },
+     "demand_forecast": {
+      "rows": 51,
+      "bytes": 3274
+     },
+     "demand_profile": {
+      "rows": 576,
+      "bytes": 3373
+     },
+     "renewable_profiles": {
+      "rows": 768,
+      "bytes": 5279
+     },
+     "generator_constants": {
+      "rows": 41,
+      "bytes": 10084
+     },
+     "generator_costs": {
+      "rows": 82,
+      "bytes": 12876
+     },
+     "storage_constants": {
+      "rows": 1,
+      "bytes": 7479
+     },
+     "storage_costs": {
+      "rows": 2,
+      "bytes": 11231
+     },
+     "network": {
+      "rows": 2,
+      "bytes": 4720
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 34,
+      "bytes": 2861
+     },
+     "generator_capacity": {
+      "rows": 697,
+      "bytes": 4910
+     },
+     "storage_capacity": {
+      "rows": 17,
+      "bytes": 3888
+     },
+     "dispatch": {
+      "rows": 137088,
+      "bytes": 99590
+     },
+     "lost_load": {
+      "rows": 9792,
+      "bytes": 11499
+     },
+     "line_flow": {
+      "rows": 6528,
+      "bytes": 33783
+     },
+     "storage_soc": {
+      "rows": 3264,
+      "bytes": 12882
+     },
+     "prices": {
+      "rows": 9792,
+      "bytes": 13064
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2561
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 29376,
+      "bytes": 85436
+     },
+     "demand": {
+      "rows": 9792,
+      "bytes": 39965
+     },
+     "capacity_by_fuel": {
+      "rows": 153,
+      "bytes": 4122
+     }
+    }
+   },
+   "summary": {
+    "objective": 1188190000.0,
+    "demand": 21266600.0,
+    "lost_load": 3719.39
+   }
+  },
+  "Georgia": {
+   "name": "Georgia",
+   "iso3": [
+    "GEO"
+   ],
+   "zones": [
+    "Georgia"
+   ],
+   "years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037,
+    2038,
+    2039,
+    2040
+   ],
+   "license": {
+    "license_id": "CC-BY-SA-4.0",
+    "license_title": "Creative Commons Attribution Share-Alike 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source_title": "Georgia - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/georgia-electricity-power-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1771
+     },
+     "zones": {
+      "rows": 1,
+      "bytes": 2204
+     },
+     "years": {
+      "rows": 20,
+      "bytes": 1282
+     },
+     "times": {
+      "rows": 60,
+      "bytes": 1986
+     },
+     "demand_forecast": {
+      "rows": 20,
+      "bytes": 2999
+     },
+     "demand_profile": {
+      "rows": 60,
+      "bytes": 2871
+     },
+     "renewable_profiles": {
+      "rows": 8820,
+      "bytes": 17522
+     },
+     "generator_constants": {
+      "rows": 163,
+      "bytes": 14976
+     },
+     "generator_costs": {
+      "rows": 326,
+      "bytes": 16674
+     },
+     "storage_constants": {
+      "rows": 0,
+      "bytes": 5937
+     },
+     "storage_costs": {
+      "rows": 0,
+      "bytes": 9230
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 0,
+      "bytes": 2220
+     },
+     "generator_capacity": {
+      "rows": 3260,
+      "bytes": 6833
+     },
+     "storage_capacity": {
+      "rows": 0,
+      "bytes": 3031
+     },
+     "dispatch": {
+      "rows": 195600,
+      "bytes": 86182
+     },
+     "lost_load": {
+      "rows": 1200,
+      "bytes": 6291
+     },
+     "line_flow": {
+      "rows": 0,
+      "bytes": 2991
+     },
+     "storage_soc": {
+      "rows": 0,
+      "bytes": 3797
+     },
+     "prices": {
+      "rows": 1200,
+      "bytes": 6688
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2544
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 6000,
+      "bytes": 25672
+     },
+     "demand": {
+      "rows": 1200,
+      "bytes": 17430
+     },
+     "capacity_by_fuel": {
+      "rows": 100,
+      "bytes": 3890
+     }
+    }
+   },
+   "summary": {
+    "objective": 581604000.0,
+    "demand": 373890000.0,
+    "lost_load": 0.0
+   }
+  },
+  "Iraq": {
+   "name": "Iraq",
+   "iso3": [
+    "IRQ"
+   ],
+   "zones": [
+    "IRAQ"
+   ],
+   "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037,
+    2038,
+    2039,
+    2040
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Iraq - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/iraq-electricity-planning-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1771
+     },
+     "zones": {
+      "rows": 1,
+      "bytes": 2159
+     },
+     "years": {
+      "rows": 23,
+      "bytes": 1292
+     },
+     "times": {
+      "rows": 288,
+      "bytes": 2284
+     },
+     "demand_forecast": {
+      "rows": 24,
+      "bytes": 3005
+     },
+     "demand_profile": {
+      "rows": 288,
+      "bytes": 3968
+     },
+     "renewable_profiles": {
+      "rows": 3744,
+      "bytes": 7894
+     },
+     "generator_constants": {
+      "rows": 128,
+      "bytes": 11853
+     },
+     "generator_costs": {
+      "rows": 256,
+      "bytes": 27314
+     },
+     "storage_constants": {
+      "rows": 1,
+      "bytes": 7626
+     },
+     "storage_costs": {
+      "rows": 2,
+      "bytes": 14624
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 0,
+      "bytes": 2220
+     },
+     "generator_capacity": {
+      "rows": 2944,
+      "bytes": 6654
+     },
+     "storage_capacity": {
+      "rows": 23,
+      "bytes": 4027
+     },
+     "dispatch": {
+      "rows": 854496,
+      "bytes": 602270
+     },
+     "lost_load": {
+      "rows": 6624,
+      "bytes": 26777
+     },
+     "line_flow": {
+      "rows": 0,
+      "bytes": 2991
+     },
+     "storage_soc": {
+      "rows": 6624,
+      "bytes": 23062
+     },
+     "prices": {
+      "rows": 6624,
+      "bytes": 23101
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2575
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 52992,
+      "bytes": 93706
+     },
+     "demand": {
+      "rows": 6624,
+      "bytes": 67539
+     },
+     "capacity_by_fuel": {
+      "rows": 184,
+      "bytes": 4412
+     }
+    }
+   },
+   "summary": {
+    "objective": 327084000000.0,
+    "demand": 7189550000.0,
+    "lost_load": 440328000.0
+   }
+  },
+  "Lao": {
+   "name": "Lao",
+   "iso3": [
+    "LAO"
+   ],
+   "zones": [
+    "North",
+    "Central1",
+    "Central2",
+    "South"
+   ],
+   "years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Lao (PDR) - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/lao-pdr-electricity-planning-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1771
+     },
+     "zones": {
+      "rows": 4,
+      "bytes": 2234
+     },
+     "years": {
+      "rows": 11,
+      "bytes": 1249
+     },
+     "times": {
+      "rows": 48,
+      "bytes": 1955
+     },
+     "demand_forecast": {
+      "rows": 44,
+      "bytes": 3200
+     },
+     "demand_profile": {
+      "rows": 192,
+      "bytes": 2867
+     },
+     "renewable_profiles": {
+      "rows": 4752,
+      "bytes": 8737
+     },
+     "generator_constants": {
+      "rows": 112,
+      "bytes": 13216
+     },
+     "generator_costs": {
+      "rows": 224,
+      "bytes": 12781
+     },
+     "storage_constants": {
+      "rows": 0,
+      "bytes": 5937
+     },
+     "storage_costs": {
+      "rows": 0,
+      "bytes": 5740
+     },
+     "network": {
+      "rows": 5,
+      "bytes": 4906
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 33,
+      "bytes": 2928
+     },
+     "generator_capacity": {
+      "rows": 1232,
+      "bytes": 6001
+     },
+     "storage_capacity": {
+      "rows": 0,
+      "bytes": 3031
+     },
+     "dispatch": {
+      "rows": 59136,
+      "bytes": 28665
+     },
+     "lost_load": {
+      "rows": 2112,
+      "bytes": 4846
+     },
+     "line_flow": {
+      "rows": 1584,
+      "bytes": 14613
+     },
+     "storage_soc": {
+      "rows": 0,
+      "bytes": 3797
+     },
+     "prices": {
+      "rows": 2112,
+      "bytes": 4873
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2541
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 6336,
+      "bytes": 16867
+     },
+     "demand": {
+      "rows": 2112,
+      "bytes": 26043
+     },
+     "capacity_by_fuel": {
+      "rows": 132,
+      "bytes": 3832
+     }
+    }
+   },
+   "summary": {
+    "objective": 102409000.0,
+    "demand": 143271000.0,
+    "lost_load": 0.0
+   }
+  },
+  "Liberia": {
+   "name": "Liberia",
+   "iso3": [
+    "LBR"
+   ],
+   "zones": [
+    "Liberia"
+   ],
+   "years": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037,
+    2038,
+    2039,
+    2040,
+    2041,
+    2042
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Liberia - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/liberia-electricity-planning-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1771
+     },
+     "zones": {
+      "rows": 1,
+      "bytes": 2204
+     },
+     "years": {
+      "rows": 27,
+      "bytes": 1308
+     },
+     "times": {
+      "rows": 576,
+      "bytes": 2951
+     },
+     "demand_forecast": {
+      "rows": 27,
+      "bytes": 3033
+     },
+     "demand_profile": {
+      "rows": 576,
+      "bytes": 3616
+     },
+     "renewable_profiles": {
+      "rows": 9792,
+      "bytes": 6415
+     },
+     "generator_constants": {
+      "rows": 22,
+      "bytes": 10214
+     },
+     "generator_costs": {
+      "rows": 44,
+      "bytes": 21275
+     },
+     "storage_constants": {
+      "rows": 1,
+      "bytes": 7520
+     },
+     "storage_costs": {
+      "rows": 2,
+      "bytes": 16823
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 0,
+      "bytes": 2220
+     },
+     "generator_capacity": {
+      "rows": 594,
+      "bytes": 4760
+     },
+     "storage_capacity": {
+      "rows": 27,
+      "bytes": 4099
+     },
+     "dispatch": {
+      "rows": 357696,
+      "bytes": 614995
+     },
+     "lost_load": {
+      "rows": 15552,
+      "bytes": 50496
+     },
+     "line_flow": {
+      "rows": 0,
+      "bytes": 2991
+     },
+     "storage_soc": {
+      "rows": 15552,
+      "bytes": 66061
+     },
+     "prices": {
+      "rows": 15552,
+      "bytes": 44013
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2566
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 93312,
+      "bytes": 213868
+     },
+     "demand": {
+      "rows": 15552,
+      "bytes": 56435
+     },
+     "capacity_by_fuel": {
+      "rows": 162,
+      "bytes": 4252
+     }
+    }
+   },
+   "summary": {
+    "objective": 1013850000.0,
+    "demand": 36589600.0,
+    "lost_load": 1456030.0
+   }
+  },
+  "Morocco": {
+   "name": "Morocco",
+   "iso3": [
+    "MAR"
+   ],
+   "zones": [
+    "MOROCCO"
+   ],
+   "years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037,
+    2038,
+    2039,
+    2040,
+    2041,
+    2042,
+    2043,
+    2044,
+    2045,
+    2046,
+    2047,
+    2048,
+    2049,
+    2050
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Morocco - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/morocco-electricity-planning-models",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1771
+     },
+     "zones": {
+      "rows": 1,
+      "bytes": 2204
+     },
+     "years": {
+      "rows": 31,
+      "bytes": 1320
+     },
+     "times": {
+      "rows": 864,
+      "bytes": 3242
+     },
+     "demand_forecast": {
+      "rows": 31,
+      "bytes": 3102
+     },
+     "demand_profile": {
+      "rows": 864,
+      "bytes": 5071
+     },
+     "renewable_profiles": {
+      "rows": 39744,
+      "bytes": 13768
+     },
+     "generator_constants": {
+      "rows": 117,
+      "bytes": 12660
+     },
+     "generator_costs": {
+      "rows": 234,
+      "bytes": 31616
+     },
+     "storage_constants": {
+      "rows": 5,
+      "bytes": 7845
+     },
+     "storage_costs": {
+      "rows": 10,
+      "bytes": 19333
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 0,
+      "bytes": 2220
+     },
+     "generator_capacity": {
+      "rows": 3627,
+      "bytes": 6896
+     },
+     "storage_capacity": {
+      "rows": 155,
+      "bytes": 4351
+     },
+     "dispatch": {
+      "rows": 3267648,
+      "bytes": 6768796
+     },
+     "lost_load": {
+      "rows": 26784,
+      "bytes": 70412
+     },
+     "line_flow": {
+      "rows": 0,
+      "bytes": 2991
+     },
+     "storage_soc": {
+      "rows": 133920,
+      "bytes": 436154
+     },
+     "prices": {
+      "rows": 26784,
+      "bytes": 87741
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2567
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 187488,
+      "bytes": 737794
+     },
+     "demand": {
+      "rows": 26784,
+      "bytes": 135795
+     },
+     "capacity_by_fuel": {
+      "rows": 217,
+      "bytes": 5265
+     }
+    }
+   },
+   "summary": {
+    "objective": 32304800000.0,
+    "demand": 3177720000.0,
+    "lost_load": 4389.2
+   }
+  },
+  "Namibia": {
+   "name": "Namibia",
+   "iso3": [
+    "NAM"
+   ],
+   "zones": [
+    "Windhoek",
+    "Aus",
+    "Kokerboom"
+   ],
+   "years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037,
+    2038,
+    2039,
+    2040
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Namibia - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/namibia-electricity-planning-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1771
+     },
+     "zones": {
+      "rows": 3,
+      "bytes": 2236
+     },
+     "years": {
+      "rows": 21,
+      "bytes": 1285
+     },
+     "times": {
+      "rows": 144,
+      "bytes": 2042
+     },
+     "demand_forecast": {
+      "rows": 21,
+      "bytes": 3036
+     },
+     "demand_profile": {
+      "rows": 144,
+      "bytes": 3362
+     },
+     "renewable_profiles": {
+      "rows": 864,
+      "bytes": 6182
+     },
+     "generator_constants": {
+      "rows": 23,
+      "bytes": 9985
+     },
+     "generator_costs": {
+      "rows": 46,
+      "bytes": 16615
+     },
+     "storage_constants": {
+      "rows": 7,
+      "bytes": 7733
+     },
+     "storage_costs": {
+      "rows": 14,
+      "bytes": 13858
+     },
+     "network": {
+      "rows": 4,
+      "bytes": 5188
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 42,
+      "bytes": 2997
+     },
+     "generator_capacity": {
+      "rows": 483,
+      "bytes": 5014
+     },
+     "storage_capacity": {
+      "rows": 147,
+      "bytes": 4218
+     },
+     "dispatch": {
+      "rows": 90720,
+      "bytes": 82328
+     },
+     "lost_load": {
+      "rows": 9072,
+      "bytes": 10834
+     },
+     "line_flow": {
+      "rows": 6048,
+      "bytes": 27251
+     },
+     "storage_soc": {
+      "rows": 21168,
+      "bytes": 21835
+     },
+     "prices": {
+      "rows": 9072,
+      "bytes": 12997
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2575
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 39312,
+      "bytes": 88112
+     },
+     "demand": {
+      "rows": 9072,
+      "bytes": 34970
+     },
+     "capacity_by_fuel": {
+      "rows": 273,
+      "bytes": 4590
+     }
+    }
+   },
+   "summary": {
+    "objective": 1663020000.0,
+    "demand": 97332600.0,
+    "lost_load": 11423.3
+   }
+  },
+  "Nigeria": {
+   "name": "Nigeria",
+   "iso3": [
+    "NGA"
+   ],
+   "zones": [
+    "NGA"
+   ],
+   "years": [
+    2018
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Nigeria - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/nigeria-electricity-planning-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1771
+     },
+     "zones": {
+      "rows": 1,
+      "bytes": 2162
+     },
+     "years": {
+      "rows": 1,
+      "bytes": 1206
+     },
+     "times": {
+      "rows": 8760,
+      "bytes": 22790
+     },
+     "demand_forecast": {
+      "rows": 1,
+      "bytes": 2754
+     },
+     "demand_profile": {
+      "rows": 8760,
+      "bytes": 35966
+     },
+     "renewable_profiles": {
+      "rows": 26280,
+      "bytes": 36665
+     },
+     "generator_constants": {
+      "rows": 28,
+      "bytes": 9572
+     },
+     "generator_costs": {
+      "rows": 56,
+      "bytes": 2869
+     },
+     "storage_constants": {
+      "rows": 0,
+      "bytes": 5937
+     },
+     "storage_costs": {
+      "rows": 0,
+      "bytes": 1877
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 0,
+      "bytes": 2220
+     },
+     "generator_capacity": {
+      "rows": 28,
+      "bytes": 4312
+     },
+     "storage_capacity": {
+      "rows": 0,
+      "bytes": 3031
+     },
+     "dispatch": {
+      "rows": 245280,
+      "bytes": 440734
+     },
+     "lost_load": {
+      "rows": 8760,
+      "bytes": 48003
+     },
+     "line_flow": {
+      "rows": 0,
+      "bytes": 2991
+     },
+     "storage_soc": {
+      "rows": 0,
+      "bytes": 3797
+     },
+     "prices": {
+      "rows": 8760,
+      "bytes": 49823
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2527
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 17520,
+      "bytes": 120189
+     },
+     "demand": {
+      "rows": 8760,
+      "bytes": 63217
+     },
+     "capacity_by_fuel": {
+      "rows": 2,
+      "bytes": 3351
+     }
+    }
+   },
+   "summary": {
+    "objective": 758836000.0,
+    "demand": 30588500.0,
+    "lost_load": 0.0
+   }
+  },
+  "Poland": {
+   "name": "Poland",
+   "iso3": [
+    "POL"
+   ],
+   "zones": [
+    "PSE"
+   ],
+   "years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037,
+    2038,
+    2039,
+    2040,
+    2041,
+    2042,
+    2043,
+    2044,
+    2045,
+    2046,
+    2047,
+    2048,
+    2049,
+    2050
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Poland - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/poland-electricity-planning-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1771
+     },
+     "zones": {
+      "rows": 1,
+      "bytes": 2157
+     },
+     "years": {
+      "rows": 31,
+      "bytes": 1320
+     },
+     "times": {
+      "rows": 432,
+      "bytes": 2535
+     },
+     "demand_forecast": {
+      "rows": 31,
+      "bytes": 3061
+     },
+     "demand_profile": {
+      "rows": 432,
+      "bytes": 4530
+     },
+     "renewable_profiles": {
+      "rows": 5184,
+      "bytes": 8928
+     },
+     "generator_constants": {
+      "rows": 145,
+      "bytes": 13216
+     },
+     "generator_costs": {
+      "rows": 290,
+      "bytes": 31880
+     },
+     "storage_constants": {
+      "rows": 1,
+      "bytes": 7504
+     },
+     "storage_costs": {
+      "rows": 2,
+      "bytes": 19064
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 0,
+      "bytes": 2220
+     },
+     "generator_capacity": {
+      "rows": 4495,
+      "bytes": 7169
+     },
+     "storage_capacity": {
+      "rows": 31,
+      "bytes": 3960
+     },
+     "dispatch": {
+      "rows": 1955232,
+      "bytes": 2628000
+     },
+     "lost_load": {
+      "rows": 13392,
+      "bytes": 36844
+     },
+     "line_flow": {
+      "rows": 0,
+      "bytes": 2991
+     },
+     "storage_soc": {
+      "rows": 13392,
+      "bytes": 39108
+     },
+     "prices": {
+      "rows": 13392,
+      "bytes": 46552
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2567
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 120528,
+      "bytes": 226637
+     },
+     "demand": {
+      "rows": 13392,
+      "bytes": 115908
+     },
+     "capacity_by_fuel": {
+      "rows": 279,
+      "bytes": 4494
+     }
+    }
+   },
+   "summary": {
+    "objective": 67306200000.0,
+    "demand": 6312440000.0,
+    "lost_load": 243133.0
+   }
+  },
+  "Rwanda": {
+   "name": "Rwanda",
+   "iso3": [
+    "RWA"
+   ],
+   "zones": [
+    "Rwanda"
+   ],
+   "years": [
+    2021
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Rwanda - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/rwanda-electricity-planning-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1771
+     },
+     "zones": {
+      "rows": 1,
+      "bytes": 2189
+     },
+     "years": {
+      "rows": 1,
+      "bytes": 1206
+     },
+     "times": {
+      "rows": 8760,
+      "bytes": 22790
+     },
+     "demand_forecast": {
+      "rows": 1,
+      "bytes": 2770
+     },
+     "demand_profile": {
+      "rows": 8760,
+      "bytes": 35892
+     },
+     "renewable_profiles": {
+      "rows": 183960,
+      "bytes": 165198
+     },
+     "generator_constants": {
+      "rows": 32,
+      "bytes": 10029
+     },
+     "generator_costs": {
+      "rows": 64,
+      "bytes": 2709
+     },
+     "storage_constants": {
+      "rows": 0,
+      "bytes": 5937
+     },
+     "storage_costs": {
+      "rows": 0,
+      "bytes": 1877
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 0,
+      "bytes": 2220
+     },
+     "generator_capacity": {
+      "rows": 32,
+      "bytes": 4397
+     },
+     "storage_capacity": {
+      "rows": 0,
+      "bytes": 3031
+     },
+     "dispatch": {
+      "rows": 280320,
+      "bytes": 528128
+     },
+     "lost_load": {
+      "rows": 8760,
+      "bytes": 48018
+     },
+     "line_flow": {
+      "rows": 0,
+      "bytes": 2991
+     },
+     "storage_soc": {
+      "rows": 0,
+      "bytes": 3797
+     },
+     "prices": {
+      "rows": 8760,
+      "bytes": 48388
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2524
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 52560,
+      "bytes": 185550
+     },
+     "demand": {
+      "rows": 8760,
+      "bytes": 63882
+     },
+     "capacity_by_fuel": {
+      "rows": 6,
+      "bytes": 3432
+     }
+    }
+   },
+   "summary": {
+    "objective": 32585200.0,
+    "demand": 1017120.0,
+    "lost_load": 0.0
+   }
+  },
+  "Senegal": {
+   "name": "Senegal",
+   "iso3": [
+    "SEN"
+   ],
+   "zones": [
+    "SEN"
+   ],
+   "years": [
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "license": {
+    "license_id": "CC0-1.0",
+    "license_title": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_title": "Senegal - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/senegal-electricity-planning-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1771
+     },
+     "zones": {
+      "rows": 1,
+      "bytes": 2162
+     },
+     "years": {
+      "rows": 14,
+      "bytes": 1257
+     },
+     "times": {
+      "rows": 288,
+      "bytes": 2284
+     },
+     "demand_forecast": {
+      "rows": 14,
+      "bytes": 2917
+     },
+     "demand_profile": {
+      "rows": 288,
+      "bytes": 4087
+     },
+     "renewable_profiles": {
+      "rows": 1152,
+      "bytes": 6640
+     },
+     "generator_constants": {
+      "rows": 25,
+      "bytes": 9644
+     },
+     "generator_costs": {
+      "rows": 50,
+      "bytes": 11524
+     },
+     "storage_constants": {
+      "rows": 0,
+      "bytes": 5937
+     },
+     "storage_costs": {
+      "rows": 0,
+      "bytes": 6912
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 0,
+      "bytes": 2220
+     },
+     "generator_capacity": {
+      "rows": 350,
+      "bytes": 4553
+     },
+     "storage_capacity": {
+      "rows": 0,
+      "bytes": 3031
+     },
+     "dispatch": {
+      "rows": 100800,
+      "bytes": 84023
+     },
+     "lost_load": {
+      "rows": 4032,
+      "bytes": 14229
+     },
+     "line_flow": {
+      "rows": 0,
+      "bytes": 2991
+     },
+     "storage_soc": {
+      "rows": 0,
+      "bytes": 3797
+     },
+     "prices": {
+      "rows": 4032,
+      "bytes": 15607
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2561
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 24192,
+      "bytes": 60851
+     },
+     "demand": {
+      "rows": 4032,
+      "bytes": 43055
+     },
+     "capacity_by_fuel": {
+      "rows": 84,
+      "bytes": 3746
+     }
+    }
+   },
+   "summary": {
+    "objective": 3813280000.0,
+    "demand": 91611100.0,
+    "lost_load": 107020.0
+   }
+  },
+  "Sierra Leone": {
+   "name": "Sierra Leone",
+   "iso3": [
+    "SLE"
+   ],
+   "zones": [
+    "Sierra_Leone"
+   ],
+   "years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Sierra Leone - Electricity Panning Model",
+    "source_url": "https://energydata.info/dataset/sierra-leone-electricity-panning-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1771
+     },
+     "zones": {
+      "rows": 1,
+      "bytes": 2279
+     },
+     "years": {
+      "rows": 12,
+      "bytes": 1252
+     },
+     "times": {
+      "rows": 96,
+      "bytes": 1956
+     },
+     "demand_forecast": {
+      "rows": 12,
+      "bytes": 2933
+     },
+     "demand_profile": {
+      "rows": 96,
+      "bytes": 3142
+     },
+     "renewable_profiles": {
+      "rows": 576,
+      "bytes": 5295
+     },
+     "generator_constants": {
+      "rows": 16,
+      "bytes": 9824
+     },
+     "generator_costs": {
+      "rows": 32,
+      "bytes": 9822
+     },
+     "storage_constants": {
+      "rows": 0,
+      "bytes": 5937
+     },
+     "storage_costs": {
+      "rows": 0,
+      "bytes": 6132
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 0,
+      "bytes": 2220
+     },
+     "generator_capacity": {
+      "rows": 192,
+      "bytes": 4435
+     },
+     "storage_capacity": {
+      "rows": 0,
+      "bytes": 3031
+     },
+     "dispatch": {
+      "rows": 18432,
+      "bytes": 18951
+     },
+     "lost_load": {
+      "rows": 1152,
+      "bytes": 6364
+     },
+     "line_flow": {
+      "rows": 0,
+      "bytes": 2991
+     },
+     "storage_soc": {
+      "rows": 0,
+      "bytes": 3797
+     },
+     "prices": {
+      "rows": 1152,
+      "bytes": 6817
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2558
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 6912,
+      "bytes": 22628
+     },
+     "demand": {
+      "rows": 1152,
+      "bytes": 15635
+     },
+     "capacity_by_fuel": {
+      "rows": 72,
+      "bytes": 3663
+     }
+    }
+   },
+   "summary": {
+    "objective": 312784000.0,
+    "demand": 9709090.0,
+    "lost_load": 966.901
+   }
+  },
+  "Sudan": {
+   "name": "Sudan",
+   "iso3": [
+    "SDN"
+   ],
+   "zones": [
+    "Sudan"
+   ],
+   "years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Sudan - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/sudan-electricity-planning-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1771
+     },
+     "zones": {
+      "rows": 1,
+      "bytes": 2174
+     },
+     "years": {
+      "rows": 12,
+      "bytes": 1252
+     },
+     "times": {
+      "rows": 96,
+      "bytes": 1955
+     },
+     "demand_forecast": {
+      "rows": 12,
+      "bytes": 2880
+     },
+     "demand_profile": {
+      "rows": 96,
+      "bytes": 3037
+     },
+     "renewable_profiles": {
+      "rows": 768,
+      "bytes": 4496
+     },
+     "generator_constants": {
+      "rows": 49,
+      "bytes": 10286
+     },
+     "generator_costs": {
+      "rows": 98,
+      "bytes": 10637
+     },
+     "storage_constants": {
+      "rows": 0,
+      "bytes": 5937
+     },
+     "storage_costs": {
+      "rows": 0,
+      "bytes": 6132
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 0,
+      "bytes": 2220
+     },
+     "generator_capacity": {
+      "rows": 588,
+      "bytes": 4831
+     },
+     "storage_capacity": {
+      "rows": 0,
+      "bytes": 3031
+     },
+     "dispatch": {
+      "rows": 56448,
+      "bytes": 21195
+     },
+     "lost_load": {
+      "rows": 1152,
+      "bytes": 8103
+     },
+     "line_flow": {
+      "rows": 0,
+      "bytes": 2991
+     },
+     "storage_soc": {
+      "rows": 0,
+      "bytes": 3797
+     },
+     "prices": {
+      "rows": 1152,
+      "bytes": 7515
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2563
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 4608,
+      "bytes": 14865
+     },
+     "demand": {
+      "rows": 1152,
+      "bytes": 13881
+     },
+     "capacity_by_fuel": {
+      "rows": 48,
+      "bytes": 3563
+     }
+    }
+   },
+   "summary": {
+    "objective": 23027800000.0,
+    "demand": 359327000.0,
+    "lost_load": 45343600.0
+   }
+  },
+  "WestAfrica": {
+   "name": "WestAfrica",
+   "iso3": [
+    "BEN",
+    "BFA",
+    "GMB",
+    "GHA",
+    "GIN",
+    "GNB",
+    "CIV",
+    "LBR",
+    "MLI",
+    "MRT",
+    "NER",
+    "NGA",
+    "SEN",
+    "SLE",
+    "TGO"
+   ],
+   "zones": [
+    "Benin",
+    "Burkina",
+    "Gambia",
+    "Ghana",
+    "Guinea",
+    "GuineaBissau",
+    "IvoryCoast",
+    "Liberia",
+    "Mali",
+    "Mauritania_grid",
+    "Mauritania_Nema",
+    "Niger",
+    "Nigeria",
+    "Senegal",
+    "SierraLeone",
+    "Togo"
+   ],
+   "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037,
+    2038,
+    2039,
+    2040
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Mauritania - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/mauritania-electricity-planning-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1771
+     },
+     "zones": {
+      "rows": 16,
+      "bytes": 2556
+     },
+     "years": {
+      "rows": 23,
+      "bytes": 1292
+     },
+     "times": {
+      "rows": 96,
+      "bytes": 1955
+     },
+     "demand_forecast": {
+      "rows": 400,
+      "bytes": 5647
+     },
+     "demand_profile": {
+      "rows": 1536,
+      "bytes": 5259
+     },
+     "renewable_profiles": {
+      "rows": 17472,
+      "bytes": 16817
+     },
+     "generator_constants": {
+      "rows": 538,
+      "bytes": 21900
+     },
+     "generator_costs": {
+      "rows": 1076,
+      "bytes": 47091
+     },
+     "storage_constants": {
+      "rows": 17,
+      "bytes": 8056
+     },
+     "storage_costs": {
+      "rows": 34,
+      "bytes": 14761
+     },
+     "network": {
+      "rows": 66,
+      "bytes": 5344
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 644,
+      "bytes": 3572
+     },
+     "generator_capacity": {
+      "rows": 12374,
+      "bytes": 13928
+     },
+     "storage_capacity": {
+      "rows": 391,
+      "bytes": 4524
+     },
+     "dispatch": {
+      "rows": 1225440,
+      "bytes": 498264
+     },
+     "lost_load": {
+      "rows": 35328,
+      "bytes": 18532
+     },
+     "line_flow": {
+      "rows": 61824,
+      "bytes": 157549
+     },
+     "storage_soc": {
+      "rows": 37536,
+      "bytes": 29118
+     },
+     "prices": {
+      "rows": 35328,
+      "bytes": 34330
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2568
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 192096,
+      "bytes": 352716
+     },
+     "demand": {
+      "rows": 35328,
+      "bytes": 199795
+     },
+     "capacity_by_fuel": {
+      "rows": 2001,
+      "bytes": 8997
+     }
+    }
+   },
+   "summary": {
+    "objective": 64940900000.0,
+    "demand": 3267070000.0,
+    "lost_load": 1846860.0
+   }
+  }
+ },
+ "updated": "2026-10-28"
+}
