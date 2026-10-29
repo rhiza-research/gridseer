@@ -1,5 +1,5 @@
 // Shared page pieces: title, tabs and selectors, figures, fuel legend, number formats.
-import { DEFAULT_SOURCE, SOURCES, displayName } from "./config.js";
+import { DEFAULT_SOURCE, SITE_NAME, SOURCES, displayName } from "./config.js";
 import { FUELS, fuelColor } from "./fuels.js";
 
 export function licenseLine(l) {
@@ -16,6 +16,7 @@ export function pageHead(d, view, zone) {
       ${d.zones.map((z) => `<option ${z === zone ? "selected" : ""}>${z}</option>`).join("")}
     </select></label>`;
   return `
+    <p class="site-name">${SITE_NAME}</p>
     <h1>${displayName(d.name)}</h1>
     <div class="controls">
       <nav class="tabs">

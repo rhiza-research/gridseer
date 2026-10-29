@@ -2,7 +2,7 @@
 // clicking opens that model.
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm";
 import * as topojson from "https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/+esm";
-import { displayName } from "./config.js";
+import { SITE_NAME, displayName } from "./config.js";
 import { manifest } from "./data.js";
 
 const WORLD = "https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-50m.json";
@@ -28,11 +28,12 @@ export async function renderMap(app) {
     for (const iso of d.iso3) modelOf.set(NUMERIC[iso], d);
   }
 
-  // the home page shows the header's logo and name beside the intro
+  // the home page shows the header's logo beside the intro
   app.innerHTML = `
     <section class="home-intro">
       ${document.querySelector(".site-header .brand").outerHTML}
       <div>
+      <p class="site-name">${SITE_NAME}</p>
       <h1>Power-system planning models</h1>
       <p>Capacity expansion models for ${models.length} power systems, built and solved with seer.
         Choose a country to explore what a model assumes and what it builds.</p>

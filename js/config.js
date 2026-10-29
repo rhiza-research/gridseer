@@ -1,5 +1,8 @@
 // Site settings that aren't styling (styling lives in css/style.css).
 
+// the site's name, shown above each page's heading
+export const SITE_NAME = "seer";
+
 // where each model's data comes from; a model without a `source` in the manifest is EPM
 export const SOURCES = { epm: "World Bank EPM" };
 export const DEFAULT_SOURCE = "epm";
