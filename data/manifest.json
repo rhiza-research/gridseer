@@ -1586,6 +1586,190 @@
     "lost_load": 1456030.0
    }
   },
+  "Maldives": {
+   "name": "Maldives",
+   "iso3": [
+    "MDV"
+   ],
+   "zones": [
+    "DT50A",
+    "DT50B",
+    "DT42",
+    "DT34",
+    "DT54B",
+    "DT54A",
+    "DT91",
+    "DT17A",
+    "DT21",
+    "DT49",
+    "DT20A",
+    "DT114",
+    "DT78A",
+    "DT78B",
+    "DT41B",
+    "DT19",
+    "DT97",
+    "DT88",
+    "DT37B",
+    "DT37A",
+    "DT41A",
+    "DT37",
+    "DT75",
+    "DT52",
+    "DT111",
+    "DT67",
+    "DT109",
+    "DT38",
+    "DT122",
+    "DT12B",
+    "DT113",
+    "DT117",
+    "DT69",
+    "DT82B",
+    "DT82A",
+    "DT12A",
+    "DT93",
+    "DT65",
+    "DT71",
+    "DT92",
+    "DT15",
+    "DT18",
+    "Genzone",
+    "F2S1",
+    "F2S2",
+    "F2S3",
+    "F2S4",
+    "F2S5",
+    "F2S6",
+    "F2S7",
+    "F2S8",
+    "F2S9",
+    "F2S10",
+    "F7S1",
+    "F7S2",
+    "F7S3",
+    "F7S4",
+    "F7S5",
+    "F7S6",
+    "F7S7",
+    "F7S8",
+    "F14S1",
+    "F14S2",
+    "F14S3",
+    "F14S4",
+    "F14S5",
+    "F14S6",
+    "F14S7",
+    "F14S8",
+    "F14S9",
+    "F14S10",
+    "F14S11",
+    "F14S12",
+    "F14S13",
+    "F14S14",
+    "F14S15",
+    "F14S16",
+    "F14S17",
+    "F14S18",
+    "F14S19",
+    "F14S20",
+    "F14S21",
+    "F3S1",
+    "F4S1",
+    "F5S1",
+    "F6S1",
+    "F8S1",
+    "F9S1",
+    "F10S1",
+    "F11S1",
+    "F12S1",
+    "F16S1"
+   ],
+   "years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037,
+    2038,
+    2039,
+    2040
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Maldives - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/maldives-electricity-planning-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1759
+     },
+     "zones": {
+      "rows": 92,
+      "bytes": 2840
+     },
+     "years": {
+      "rows": 20,
+      "bytes": 1282
+     },
+     "times": {
+      "rows": 288,
+      "bytes": 2280
+     },
+     "demand_forecast": {
+      "rows": 1820,
+      "bytes": 7480
+     },
+     "demand_profile": {
+      "rows": 14976,
+      "bytes": 10062
+     },
+     "renewable_profiles": {
+      "rows": 15264,
+      "bytes": 6779
+     },
+     "generator_constants": {
+      "rows": 82,
+      "bytes": 11157
+     },
+     "generator_costs": {
+      "rows": 164,
+      "bytes": 14287
+     },
+     "storage_constants": {
+      "rows": 53,
+      "bytes": 7988
+     },
+     "storage_costs": {
+      "rows": 106,
+      "bytes": 13432
+     },
+     "network": {
+      "rows": 89,
+      "bytes": 5421
+     }
+    }
+   },
+   "summary": {}
+  },
   "Morocco": {
    "name": "Morocco",
    "iso3": [
@@ -2302,6 +2486,148 @@
     "lost_load": 0.0
    }
   },
+  "Sao Tome and Principe": {
+   "name": "Sao Tome and Principe",
+   "iso3": [
+    "STP"
+   ],
+   "zones": [
+    "SaoTome",
+    "Principe"
+   ],
+   "years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Sao Tome and Principe - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/sao-tome-and-principe-electricity-planning-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1759
+     },
+     "zones": {
+      "rows": 2,
+      "bytes": 2270
+     },
+     "years": {
+      "rows": 16,
+      "bytes": 1264
+     },
+     "times": {
+      "rows": 24,
+      "bytes": 1860
+     },
+     "demand_forecast": {
+      "rows": 32,
+      "bytes": 2984
+     },
+     "demand_profile": {
+      "rows": 48,
+      "bytes": 2551
+     },
+     "renewable_profiles": {
+      "rows": 72,
+      "bytes": 4392
+     },
+     "generator_constants": {
+      "rows": 21,
+      "bytes": 9688
+     },
+     "generator_costs": {
+      "rows": 42,
+      "bytes": 12428
+     },
+     "storage_constants": {
+      "rows": 2,
+      "bytes": 7610
+     },
+     "storage_costs": {
+      "rows": 4,
+      "bytes": 10723
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 0,
+      "bytes": 2220
+     },
+     "generator_capacity": {
+      "rows": 336,
+      "bytes": 4768
+     },
+     "storage_capacity": {
+      "rows": 32,
+      "bytes": 4097
+     },
+     "dispatch": {
+      "rows": 8832,
+      "bytes": 16808
+     },
+     "lost_load": {
+      "rows": 768,
+      "bytes": 4917
+     },
+     "line_flow": {
+      "rows": 0,
+      "bytes": 2991
+     },
+     "storage_soc": {
+      "rows": 768,
+      "bytes": 9550
+     },
+     "prices": {
+      "rows": 768,
+      "bytes": 5876
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2543
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 2688,
+      "bytes": 18188
+     },
+     "demand": {
+      "rows": 768,
+      "bytes": 11157
+     },
+     "capacity_by_fuel": {
+      "rows": 112,
+      "bytes": 4697
+     }
+    }
+   },
+   "summary": {
+    "objective": 375232000.0,
+    "demand": 4365840.0,
+    "lost_load": 53924.9
+   }
+  },
   "Senegal": {
    "name": "Senegal",
    "iso3": [
@@ -2715,6 +3041,173 @@
     "lost_load": 45343600.0
    }
   },
+  "Ukraine": {
+   "name": "Ukraine",
+   "iso3": [
+    "UKR"
+   ],
+   "zones": [
+    "Z01",
+    "Z02",
+    "Z03",
+    "Z05",
+    "Z06",
+    "Z07",
+    "Z08",
+    "Z09"
+   ],
+   "years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037,
+    2038,
+    2039,
+    2040,
+    2041,
+    2042,
+    2043,
+    2044,
+    2045,
+    2046,
+    2047,
+    2048,
+    2049,
+    2050
+   ],
+   "license": {
+    "license_id": "CC-BY-4.0",
+    "license_title": "Creative Commons Attribution 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_title": "Ukraine - Electricity Planning Model",
+    "source_url": "https://energydata.info/dataset/ukraine-electricity-planning-model",
+    "author": "WBG Power Systems Planning Team",
+    "organization": "World Bank Group"
+   },
+   "tables": {
+    "inputs": {
+     "settings": {
+      "rows": 2,
+      "bytes": 1759
+     },
+     "zones": {
+      "rows": 8,
+      "bytes": 2186
+     },
+     "years": {
+      "rows": 31,
+      "bytes": 1320
+     },
+     "times": {
+      "rows": 648,
+      "bytes": 2937
+     },
+     "demand_forecast": {
+      "rows": 248,
+      "bytes": 4479
+     },
+     "demand_profile": {
+      "rows": 160704,
+      "bytes": 344252
+     },
+     "renewable_profiles": {
+      "rows": 28512,
+      "bytes": 14281
+     },
+     "generator_constants": {
+      "rows": 185,
+      "bytes": 12985
+     },
+     "generator_costs": {
+      "rows": 370,
+      "bytes": 36526
+     },
+     "storage_constants": {
+      "rows": 11,
+      "bytes": 7908
+     },
+     "storage_costs": {
+      "rows": 22,
+      "bytes": 19434
+     },
+     "network": {
+      "rows": 12,
+      "bytes": 4912
+     }
+    },
+    "outputs": {
+     "line_capacity": {
+      "rows": 341,
+      "bytes": 3190
+     },
+     "generator_capacity": {
+      "rows": 5735,
+      "bytes": 6997
+     },
+     "storage_capacity": {
+      "rows": 341,
+      "bytes": 4295
+     },
+     "dispatch": {
+      "rows": 3937248,
+      "bytes": 7812660
+     },
+     "lost_load": {
+      "rows": 160704,
+      "bytes": 323074
+     },
+     "line_flow": {
+      "rows": 220968,
+      "bytes": 1338748
+     },
+     "storage_soc": {
+      "rows": 220968,
+      "bytes": 501399
+     },
+     "prices": {
+      "rows": 160704,
+      "bytes": 401966
+     },
+     "summary": {
+      "rows": 10,
+      "bytes": 2539
+     }
+    },
+    "derived": {
+     "dispatch_by_fuel": {
+      "rows": 1205280,
+      "bytes": 1135311
+     },
+     "demand": {
+      "rows": 160704,
+      "bytes": 821249
+     },
+     "capacity_by_fuel": {
+      "rows": 1860,
+      "bytes": 5200
+     }
+    }
+   },
+   "summary": {
+    "objective": 17100700000.0,
+    "demand": 5880790000.0,
+    "lost_load": 17855.8
+   }
+  },
   "WestAfrica": {
    "name": "WestAfrica",
    "iso3": [
@@ -2897,5 +3390,5 @@
    }
   }
  },
- "updated": "2026-10-28"
+ "updated": "2026-10-29"
 }

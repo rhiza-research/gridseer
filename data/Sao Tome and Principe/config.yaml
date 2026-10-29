@@ -1,0 +1,126 @@
+country: Sao Tome and Principe
+base:
+  repo: https://github.com/rhiza-research/seer-planning-models
+  path: from_epm/Sao Tome and Principe
+seed: 0
+significant_figures: 6
+cost_dataset: wb_epm
+
+solve:
+  model: pyomo
+  annualize_capex: true
+  years: all
+  time_limit: 3600
+
+runs:
+
+- name: baseline
+  noise: 0
+  solve: true
+
+- name: one_at_a_time
+  scenario:
+    sweep_mode: iterate
+    elements:
+      dr: [low, high]
+      voll: [low, high]
+      demand_growth: [low, high]
+      demand_profile: [low, high]
+      re_profile: [low, high]
+      hydro: [low, high]
+      capex: [low, high]
+      fuel: [low, high]
+  noise: 0.02
+  solve: true
+
+- name: capex_x_fuel
+  scenario:
+    sweep_mode: grid
+    elements:
+      capex: [base, low, high]
+      fuel: [base, low, high]
+  noise: 0.02
+  solve: true
+
+- name: cheap_renewables
+  scenario:
+    elements:
+      capex:solar-utility|onwind|battery storage: low
+      fuel: high
+  noise: 0.02
+  solve: true
+
+- name: fossil_lock_in
+  scenario:
+    elements:
+      capex:solar-utility|onwind|battery storage: high
+      fuel: low
+  noise: 0.02
+  solve: true
+
+- name: high_demand_poor_resource
+  scenario:
+    elements:
+      demand_growth: high
+      re_profile: low
+      hydro: low
+  noise: 0.02
+  solve: true
+
+- name: expensive_capital
+  scenario:
+    elements:
+      dr: high
+      capex: high
+  noise: 0.02
+  solve: true
+
+- name: random_solved
+  perturbation:
+    all: 0.5
+  iters: 20
+  noise: 0.02
+  solve: true
+
+- name: random_low
+  perturbation:
+    all: 0.25
+  iters: 1190
+  noise: 0.02
+  solve: false
+
+- name: random_mid
+  perturbation:
+    all: 0.5
+  iters: 1190
+  noise: 0.02
+  solve: false
+
+- name: random_high
+  perturbation:
+    all: 1.0
+  iters: 1190
+  noise: 0.02
+  solve: false
+
+# added by seer.ccai_dataset.run
+provenance:
+  base_instance:
+    commit: 2a92eb6c17de2acaef539cfd8b48b37a269c60bc
+    url: https://github.com/rhiza-research/seer-planning-models/tree/2a92eb6c17de2acaef539cfd8b48b37a269c60bc/from_epm/Sao
+      Tome and Principe
+  optimizer:
+    name: pyomo
+    solver: appsi_highs
+    commit: 37ce4720b9efa251b29cf056d69a1d6c134233a7
+    url: https://github.com/rhiza-research/seer/tree/37ce4720b9efa251b29cf056d69a1d6c134233a7/seer/models/pyomo_model
+  environment:
+    python: 3.12.2
+    seer: 0.1.0
+    pyomo: 6.10.1
+    pypsa: 1.0.6
+    linopy: 0.5.8
+    highspy: 1.12.0
+    pandas: 2.3.3
+    numpy: 2.4.0
+  created: '2026-10-29T16:21:21+00:00'

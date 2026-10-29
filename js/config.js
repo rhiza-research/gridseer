@@ -11,6 +11,7 @@ export const DEFAULT_SOURCE = "epm";
 const DISPLAY_NAMES = {
   Bosnia: "Bosnia and Herzegovina",
   Lao: "Lao PDR",
+  "Sao Tome and Principe": "São Tomé and Príncipe",
   WestAfrica: "West Africa",
 };
 export const displayName = (name) => DISPLAY_NAMES[name] ?? name;

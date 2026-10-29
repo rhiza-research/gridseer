@@ -12,7 +12,7 @@ const NUMERIC = {
   BIH: "070", BWA: "072", BFA: "854", TCD: "148", DJI: "262", EGY: "818", GMB: "270", GEO: "268", IRQ: "368",
   LAO: "418", LBR: "430", MDV: "462", MAR: "504", NAM: "516", NGA: "566", POL: "616", RWA: "646", SEN: "686",
   SLE: "694", SDN: "729", BEN: "204", GHA: "288", GIN: "324", GNB: "624", CIV: "384", MLI: "466", MRT: "478",
-  NER: "562", TGO: "768", STP: "678",
+  NER: "562", TGO: "768", STP: "678", UKR: "804",
 };
 
 let worldPromise;

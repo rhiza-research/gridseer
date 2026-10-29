@@ -8,6 +8,9 @@ export function licenseLine(l) {
 }
 
 // the model's title, the inputs/outputs tabs, and the source and zone selectors
+// a model whose baseline didn't solve has inputs only
+export const hasOutputs = (d) => Boolean(d.tables.outputs);
+
 export function pageHead(d, view, zone) {
   const name = encodeURIComponent(d.name);
   const source = d.source ?? DEFAULT_SOURCE;
@@ -21,7 +24,7 @@ export function pageHead(d, view, zone) {
     <div class="controls">
       <nav class="tabs">
         <a class="${view === "inputs" ? "active" : ""}" href="#/${name}/inputs">Model inputs</a>
-        <a class="${view === "outputs" ? "active" : ""}" href="#/${name}/outputs">Model outputs</a>
+        ${hasOutputs(d) ? `<a class="${view === "outputs" ? "active" : ""}" href="#/${name}/outputs">Model outputs</a>` : ""}
       </nav>
       <div class="selectors">
         <label>Source <select id="source">${Object.entries(SOURCES).map(([k, v]) =>

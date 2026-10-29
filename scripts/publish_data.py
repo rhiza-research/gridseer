@@ -4,7 +4,8 @@ Usage:
     uv run scripts/publish_data.py Botswana
     uv run scripts/publish_data.py --all
 
-Reads <src>/<country>/perturbations/baseline_00000/{inputs,outputs}.zip (read only) and writes <out>/<country>/:
+Reads <src>/<country>/perturbations/baseline_00000/{inputs,outputs}.zip (read only) and writes <out>/<country>/
+(a baseline that didn't solve has no outputs.zip: its country gets inputs only):
     inputs/<table>.parquet       the seer-schema input tables
     outputs/<table>.parquet      the model's output tables
     derived/<table>.parquet      tables computed here for the site:
@@ -55,9 +56,11 @@ COUNTRIES = {
     "Nigeria": ("Nigeria", ["NGA"]),
     "Poland": ("Poland", ["POL"]),
     "Rwanda": ("Rwanda", ["RWA"]),
+    "Sao Tome and Principe": ("Sao Tome and Principe", ["STP"]),
     "Senegal": ("Senegal", ["SEN"]),
     "Sierra Leone": ("Sierra Leone", ["SLE"]),
     "Sudan": ("Sudan", ["SDN"]),
+    "Ukraine": ("Ukraine", ["UKR"]),
     # the WAPP model, published from Mauritania's EPM dataset; its 16 zones cover these countries
     "WestAfrica": ("Mauritania", ["BEN", "BFA", "GMB", "GHA", "GIN", "GNB", "CIV", "LBR", "MLI", "MRT", "NER",
                                   "NGA", "SEN", "SLE", "TGO"]),
@@ -147,9 +150,14 @@ def publish(country, src, out, license):
     src_fs, src_root = fsspec.core.url_to_fs(posixpath.join(src, country))
     out_fs, out_root = fsspec.core.url_to_fs(posixpath.join(out, country))
     base = posixpath.join(src_root, "perturbations", BASELINE)
-    inputs_zip, outputs_zip = src_fs.cat(posixpath.join(base, "inputs.zip")), src_fs.cat(posixpath.join(base, "outputs.zip"))
-    inputs, outputs = read_zip(inputs_zip), read_zip(outputs_zip)
-    groups = {"inputs": inputs, "outputs": outputs, "derived": derived_tables(inputs, outputs, calendar(inputs_zip))}
+    inputs_zip = src_fs.cat(posixpath.join(base, "inputs.zip"))
+    inputs = read_zip(inputs_zip)
+    groups = {"inputs": inputs}
+    if src_fs.exists(posixpath.join(base, "outputs.zip")):
+        outputs = read_zip(src_fs.cat(posixpath.join(base, "outputs.zip")))
+        groups |= {"outputs": outputs, "derived": derived_tables(inputs, outputs, calendar(inputs_zip))}
+    else:
+        print(f"  {country}: no outputs (the baseline didn't solve); inputs only")
 
     tables = {}
     for group, frames in groups.items():
@@ -161,7 +169,7 @@ def publish(country, src, out, license):
     put(out_fs, posixpath.join(out_root, "config.yaml"), src_fs.cat(posixpath.join(src_root, "config.yaml")))
     put(out_fs, posixpath.join(out_root, "LICENSE.md"), license_md(country, license).encode())
 
-    summary = outputs["summary"].set_index("metric")["value"]
+    summary = groups["outputs"]["summary"].set_index("metric")["value"] if "outputs" in groups else pd.Series(dtype=float)
     return {"name": country, "iso3": COUNTRIES[country][1], "zones": inputs["zones"]["zone"].tolist(),
             "years": inputs["years"]["year"].tolist(), "license": license, "tables": tables,
             "summary": {k: float(summary[k]) for k in ["objective", "demand", "lost_load"] if k in summary}}

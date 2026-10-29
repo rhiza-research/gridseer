@@ -3,6 +3,7 @@ import { manifest } from "./data.js";
 import { renderInputs } from "./inputs.js";
 import { renderMap } from "./map.js";
 import { renderOutputs } from "./outputs.js";
+import { hasOutputs } from "./ui.js";
 
 const app = document.getElementById("app");
 
@@ -27,7 +28,7 @@ async function route() {
     if (!state.name) return await renderMap(app);
     const d = (await manifest()).countries[state.name];
     if (!d) throw new Error(`No model named "${state.name}".`);
-    const view = state.view === "outputs" ? "outputs" : "inputs";
+    const view = state.view === "outputs" && hasOutputs(d) ? "outputs" : "inputs";
     if (view === "inputs") await renderInputs(app, d, state.zone);
     else await renderOutputs(app, d, state.zone, state.year);
     document.getElementById("zone")?.addEventListener("change", (e) => go({ ...state, view, zone: e.target.value }));
