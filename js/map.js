@@ -34,9 +34,9 @@ export async function renderMap(app) {
       ${document.querySelector(".site-header .brand").outerHTML}
       <div>
       <p class="site-name">${SITE_NAME}</p>
-      <h1>Power-system planning models</h1>
-      <p>Capacity expansion models for ${models.length} power systems, built and solved with seer.
-        Choose a country to explore what a model assumes and what it builds.</p>
+      <h1>Power systems planning datasets</h1>
+      <p>${models.length} planning models specified in the seer schema and collected from multiple sources.
+      Explore the model parameters and planning outcomes here or transform and solve models with the <a href="#/code">seer toolkit</a>.</p>
       </div>
     </section>
     <div id="map"></div>`;
