@@ -60,6 +60,12 @@ h1, h2, .brand { font-family: var(--font-display); font-weight: 500; letter-spac
 .loading { color: var(--ink-soft); padding: 40px 0; }
 .error { color: #a5443a; padding: 40px 0; }
 
+/* Code, Data, About: links at the top right of every page, in the site name's font and color */
+.site-links { position: absolute; top: 24px; right: 32px; display: flex; gap: 10px; }
+/* the display font runs small, so 20px here reads like the body's 15px */
+.site-links a { font: 500 20px/1.2 var(--font-display); text-decoration: none; color: var(--blue); padding: 4px 12px; border-radius: 4px; }
+.site-links a:hover, .site-links a.active { color: var(--blue); background: color-mix(in srgb, var(--gold) 35%, transparent); }
+
 /* ---------------------------------------------------------------- map page */
 body.home .site-header { display: none; }
 /* the intro starts where the model pages' header does, so the logo doesn't move between pages */
@@ -124,6 +130,8 @@ article figcaption { font-size: 13px; color: var(--ink-faint); margin-top: 4px; 
 
 @media (max-width: 640px) {
   .site-header, .home-intro { padding-left: 16px; padding-right: 16px; }
+  .site-links { top: 16px; right: 16px; gap: 6px; }
+  .site-links a { padding: 3px 8px; font-size: 18px; }
   .home-intro h1, .page h1 { font-size: 40px; }
   :root { --logo-height: 108px; }
   .home-intro { gap: 16px; }

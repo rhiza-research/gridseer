@@ -1,8 +1,9 @@
-// Routes: #/ (map), #/<model>/inputs, #/<model>/outputs; ?zone= and ?year= filters.
+// Routes: #/ (map), #/code, #/data, #/about, #/<model>/inputs, #/<model>/outputs; ?zone= and ?year= filters.
 import { manifest } from "./data.js";
 import { renderInputs } from "./inputs.js";
 import { renderMap } from "./map.js";
 import { renderOutputs } from "./outputs.js";
+import { PAGES, renderPage } from "./pages.js";
 import { hasOutputs, sectionNav } from "./ui.js";
 
 const app = document.getElementById("app");
@@ -25,7 +26,9 @@ async function route() {
   // the home page carries its own logo beside the intro, so it hides the page header
   document.body.classList.toggle("home", !state.name);
   try {
+    document.querySelectorAll(".site-links a").forEach((a) => a.classList.toggle("active", a.hash === `#/${state.name}`));
     if (!state.name) return await renderMap(app);
+    if (PAGES.includes(state.name)) return await renderPage(app, state.name);
     const d = (await manifest()).countries[state.name];
     if (!d) throw new Error(`No model named "${state.name}".`);
     const view = state.view === "outputs" && hasOutputs(d) ? "outputs" : "inputs";
