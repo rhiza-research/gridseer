@@ -62,7 +62,8 @@ h1, h2, .brand { font-family: var(--font-display); font-weight: 500; letter-spac
 
 /* ---------------------------------------------------------------- map page */
 body.home .site-header { display: none; }
-.home-intro { display: flex; align-items: center; gap: 28px; padding: 24px 32px 8px; max-width: 980px; }
+/* the intro starts where the model pages' header does, so the logo doesn't move between pages */
+.home-intro { display: flex; align-items: flex-start; gap: 28px; padding: 20px 32px 8px; max-width: 980px; }
 .home-intro h1 { font-size: 52px; line-height: 1.05; margin: 0 0 10px; }
 .home-intro p:not(.site-name) { color: var(--ink-soft); font-size: 18px; margin: 0; }
 #map { width: 100%; }
@@ -92,7 +93,20 @@ body.home .site-header { display: none; }
 select { font: inherit; color: var(--ink); background: transparent; border: 0; border-bottom: 1px solid var(--rule); padding: 2px 2px; }
 select:focus { outline: none; border-bottom-color: var(--blue); }
 
-article h2 { font-size: 30px; margin: 40px 0 6px; }
+article h2 { font-size: 30px; margin: 40px 0 6px; scroll-margin-top: 24px; }
+
+/* the section list sits left of the text on wide screens */
+.toc { display: none; }
+@media (min-width: 1100px) {
+  .page.has-toc { max-width: 1084px; display: grid; grid-template-columns: 180px minmax(0, 820px); column-gap: 36px; }
+  .page.has-toc > * { grid-column: 2; }
+  .page.has-toc > .toc { grid-column: 1; grid-row: 4; display: flex; flex-direction: column; gap: 2px;
+    position: sticky; top: 24px; align-self: start; margin-top: 40px; }
+}
+.toc button { font: 15px/1.3 var(--font-body); color: var(--ink-soft); background: none; border: 0; border-radius: 4px;
+  padding: 6px 10px; text-align: left; cursor: pointer; }
+.toc button:hover { color: var(--ink); }
+.toc button.active { color: var(--ink); background: color-mix(in srgb, var(--gold) 35%, transparent); }
 article p { margin: 0 0 14px; }
 article figure { margin: 12px 0 28px; }
 article figure svg { max-width: 100%; height: auto; overflow: visible; }
@@ -101,6 +115,10 @@ article figcaption { font-size: 13px; color: var(--ink-faint); margin-top: 4px; 
 .fuel-legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 13px; color: var(--ink-soft); margin: 0 0 6px; }
 .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; }
 .inline-select { font-size: 15px; }
+.pie { display: flex; align-items: center; gap: 40px; flex-wrap: wrap; }
+.pie table { border-collapse: collapse; font-size: 14px; }
+.pie td { padding: 3px 0; }
+.pie td.num { padding-left: 24px; text-align: right; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
 .license { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 14px; font-size: 13px; color: var(--ink-faint); }
 .license a { color: var(--ink-soft); }
 
@@ -108,6 +126,6 @@ article figcaption { font-size: 13px; color: var(--ink-faint); margin-top: 4px; 
   .site-header, .home-intro { padding-left: 16px; padding-right: 16px; }
   .home-intro h1, .page h1 { font-size: 40px; }
   :root { --logo-height: 108px; }
-  .home-intro { gap: 16px; align-items: flex-start; }
+  .home-intro { gap: 16px; }
   .page { padding-left: 16px; padding-right: 16px; }
 }

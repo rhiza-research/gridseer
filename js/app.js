@@ -3,7 +3,7 @@ import { manifest } from "./data.js";
 import { renderInputs } from "./inputs.js";
 import { renderMap } from "./map.js";
 import { renderOutputs } from "./outputs.js";
-import { hasOutputs } from "./ui.js";
+import { hasOutputs, sectionNav } from "./ui.js";
 
 const app = document.getElementById("app");
 
@@ -31,6 +31,7 @@ async function route() {
     const view = state.view === "outputs" && hasOutputs(d) ? "outputs" : "inputs";
     if (view === "inputs") await renderInputs(app, d, state.zone);
     else await renderOutputs(app, d, state.zone, state.year);
+    sectionNav(app.querySelector(".page"));
     document.getElementById("zone")?.addEventListener("change", (e) => go({ ...state, view, zone: e.target.value }));
     document.getElementById("year")?.addEventListener("change", (e) => go({ ...state, view, year: Number(e.target.value) }));
   } catch (error) {

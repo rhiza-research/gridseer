@@ -7,10 +7,10 @@ export function licenseLine(l) {
     `<a href="${l.license_url ?? "#"}">${l.license_id}</a>. Shared under the same license.`;
 }
 
-// the model's title, the inputs/outputs tabs, and the source and zone selectors
 // a model whose baseline didn't solve has inputs only
 export const hasOutputs = (d) => Boolean(d.tables.outputs);
 
+// the model's title, the inputs/outputs tabs, and the source and zone selectors
 export function pageHead(d, view, zone) {
   const name = encodeURIComponent(d.name);
   const source = d.source ?? DEFAULT_SOURCE;
@@ -32,6 +32,38 @@ export function pageHead(d, view, zone) {
         ${zones}
       </div>
     </div>`;
+}
+
+// A list of the page's sections beside it: clicking one scrolls there, and the one being read is highlighted.
+export function sectionNav(page) {
+  const headings = [...page.querySelectorAll("article h2")];
+  if (headings.length < 2) return;
+  const nav = document.createElement("nav");
+  nav.className = "toc";
+  nav.setAttribute("aria-label", "Sections");
+  nav.innerHTML = headings.map((h, i) => `<button type="button" data-i="${i}">${h.textContent}</button>`).join("");
+  page.classList.add("has-toc");
+  page.append(nav);
+  const buttons = [...nav.children];
+  const mark = (i) => buttons.forEach((b, j) => b.classList.toggle("active", i === j));
+  let clickedAt = 0;
+  nav.addEventListener("click", (e) => {
+    const i = e.target.dataset?.i;
+    if (i === undefined) return;
+    mark(+i);
+    clickedAt = Date.now();
+    headings[i].scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  // the section being read: the last heading above the top third of the window
+  const update = () => {
+    if (!nav.isConnected) return removeEventListener("scroll", update);
+    if (Date.now() - clickedAt < 800) return;  // let a click's smooth scroll finish
+    const atBottom = innerHeight + scrollY >= document.documentElement.scrollHeight - 2;
+    const i = atBottom ? headings.length - 1 : headings.findLastIndex((h) => h.getBoundingClientRect().top < innerHeight / 3);
+    mark(Math.max(i, 0));
+  };
+  addEventListener("scroll", update, { passive: true });
+  update();
 }
 
 export const figure = (id, caption = "") => `<figure><div id="${id}"></div>${caption ? `<figcaption>${caption}</figcaption>` : ""}</figure>`;
@@ -61,6 +93,7 @@ export const note = (text) => Object.assign(document.createElement("p"), { class
 export const plotStyle = { fontFamily: "var(--font-body)", fontSize: "12px", background: "transparent", overflow: "visible" };
 
 export const fmt = {
+  gw: (v) => `${v.toFixed(v < 10 ? 2 : 1)} GW`,
   mw: (v) => (Math.abs(v) >= 1000 ? `${(v / 1000).toFixed(1)} GW` : `${Math.round(v)} MW`),
   energy: (mwh) => (mwh >= 1e6 ? `${(mwh / 1e6).toFixed(1)} TWh` : `${(mwh / 1e3).toFixed(0)} GWh`),
   usd: (v) => (v >= 1e9 ? `$${(v / 1e9).toFixed(2)} billion` : `$${(v / 1e6).toFixed(0)} million`),
