@@ -34,7 +34,7 @@ export async function renderMap(app) {
       ${document.querySelector(".site-header .brand").outerHTML}
       <div>
       <p class="site-name">${SITE_NAME}</p>
-      <h1>Power systems planning datasets</h1>
+      <h1>Datasets for power system planning</h1>
       Power systems planning models collected from multiple sources and made available in the seer schema.
       Explore input parameters and planning outcomes here or transform and solve models with the <a href="#/code">seer toolkit</a>.</p>
       </div>
